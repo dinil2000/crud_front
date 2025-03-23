@@ -1,0 +1,125 @@
+.navbar {
+    background-color: #333;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+  
+  .navbar-logo {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link:hover {
+    color: #4caf50;
+    transition: all 0.2s ease;
+  }
+  
+  /* Search form styles */
+  .search-form {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+  }
+  
+  .search-input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+    min-width: 200px;
+  }
+  
+  .search-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .search-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Button for clearing search */
+  .reset-search {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .reset-search:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+      padding: 1rem;
+      height: auto;
+    }
+    
+    .navbar {
+      height: auto;
+      padding: 1rem 0;
+    }
+    
+    .nav-menu {
+      margin-top: 1rem;
+    }
+    
+    .search-form {
+      margin: 1rem 0;
+      width: 100%;
+    }
+    
+    .search-input {
+      flex-grow: 1;
+    }
+  }

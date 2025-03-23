@@ -1,0 +1,136 @@
+/* styles/ItemDetail.css */
+
+.item-detail {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-detail h2 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 0.5rem;
+}
+
+.detail-content {
+    margin: 1.5rem 0;
+    line-height: 1.6;
+}
+
+.item-category {
+    color: #3498db;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.item-description {
+    color: #34495e;
+    font-size: 1rem;
+    margin: 1.5rem 0;
+    white-space: pre-wrap;
+}
+
+.created-info {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ecf0f1;
+}
+
+.created-info p {
+    margin: 0.5rem 0;
+}
+
+.detail-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #ecf0f1;
+}
+
+.back-btn,
+.edit-btn,
+.delete-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.back-btn {
+    background-color: #95a5a6;
+    color: white;
+}
+
+.back-btn:hover {
+    background-color: #7f8c8d;
+}
+
+.edit-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #2980b9;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #3498db;
+    margin: 3rem 0;
+}
+
+.error {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #e74c3c;
+    margin: 3rem 0;
+    padding: 1rem;
+    background-color: #f8d7da;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .item-detail {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .item-detail h2 {
+        font-size: 2rem;
+    }
+
+    .detail-actions {
+        flex-direction: column;
+    }
+
+    .back-btn,
+    .edit-btn,
+    .delete-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
